@@ -15,7 +15,9 @@
         v-on:assign-numbers="numberPairs = assignNumberPairs()"
       />
     </v-content>
-    <v-footer>&copy; 2019 Michael Commendatore</v-footer>
+    <v-footer>
+      <div>&copy; 2019 Michael Commendatore</div>
+    </v-footer>
   </v-app>
 </template>
 
