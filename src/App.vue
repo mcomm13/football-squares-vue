@@ -80,3 +80,9 @@ const getRandomNumbers = () => {
   return randomizedNumbers;
 };
 </script>
+
+<style lang="scss">
+.v-application--wrap {
+  min-height: 75vh;
+}
+</style>
