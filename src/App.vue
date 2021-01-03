@@ -89,4 +89,7 @@ const getRandomNumbers = () => {
 .v-application--wrap {
   min-height: 100vh;
 }
+.row {
+  margin: auto;
+}
 </style>
