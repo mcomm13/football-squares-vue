@@ -8,8 +8,8 @@
           <v-card class="elevation-12">
             <v-card-text>
               <v-row>
-                <v-col class="team1-heading">Team 1</v-col>
-                <v-col class="team2-heading">Team 2</v-col>
+                <v-col class="team1-heading">Kansas City</v-col>
+                <v-col class="team2-heading">San Francisco</v-col>
               </v-row>
               <v-row v-for="(pair,index) in numberPairs" :key="index">
                 <v-col class="team1-numbers">{{pair.team1}}</v-col>

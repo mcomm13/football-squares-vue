@@ -3,7 +3,11 @@
     <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">Football Squares Number Picker</div>
       <v-spacer></v-spacer>
-      <v-btn href="https://github.com/mcomm13/football-squares-vue" target="_blank" text>
+      <v-btn
+        href="https://github.com/mcomm13/football-squares-vue"
+        target="_blank"
+        text
+      >
         <span class="mr-2">View on GitHub</span>
         <v-icon>mdi-github-circle</v-icon>
       </v-btn>
@@ -22,29 +26,29 @@
 </template>
 
 <script>
-import FootballSquares from "./components/FootballSquares";
+import FootballSquares from './components/FootballSquares';
 
 export default {
-  name: "App",
+  name: 'App',
 
   components: {
-    FootballSquares
+    FootballSquares,
   },
 
   data: () => {
     return {
       numberPairs: [
-        { team1: "X", team2: "X" },
-        { team1: "X", team2: "X" },
-        { team1: "X", team2: "X" },
-        { team1: "X", team2: "X" },
-        { team1: "X", team2: "X" },
-        { team1: "X", team2: "X" },
-        { team1: "X", team2: "X" },
-        { team1: "X", team2: "X" },
-        { team1: "X", team2: "X" },
-        { team1: "X", team2: "X" }
-      ]
+        { team1: 'X', team2: 'X' },
+        { team1: 'X', team2: 'X' },
+        { team1: 'X', team2: 'X' },
+        { team1: 'X', team2: 'X' },
+        { team1: 'X', team2: 'X' },
+        { team1: 'X', team2: 'X' },
+        { team1: 'X', team2: 'X' },
+        { team1: 'X', team2: 'X' },
+        { team1: 'X', team2: 'X' },
+        { team1: 'X', team2: 'X' },
+      ],
     };
   },
   methods: {
@@ -56,12 +60,12 @@ export default {
       for (let i = 0; i <= 9; i++) {
         returnValue[i] = {
           team1: team1Numbers[i],
-          team2: team2Numbers[i]
+          team2: team2Numbers[i],
         };
       }
       return returnValue;
-    }
-  }
+    },
+  },
 };
 
 const getRandomNumbers = () => {
@@ -83,6 +87,6 @@ const getRandomNumbers = () => {
 
 <style lang="scss">
 .v-application--wrap {
-  min-height: 75vh;
+  min-height: 100vh;
 }
 </style>
